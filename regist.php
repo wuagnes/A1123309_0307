@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Mengambil data dari formulir
     $name = $_POST['name'];
     $student_id = $_POST['student_id'];
     $phone = $_POST['phone'];
@@ -14,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $shirt_size = $_POST['shirt_size'];
     $message = $_POST['message'];
 
-    // Menyimpan atau memproses data (contoh: menampilkan hasil atau menyimpannya di database)
     echo "<h2>提交表格：</h2>";
     echo "姓名: $name<br>";
     echo "學號: $student_id<br>";
@@ -29,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "衣服尺寸: $shirt_size<br>";
     echo "留言: $message<br>";
 } else {
-    // Menampilkan formulir jika belum disubmit
+    
     ?>
 
     <html>
